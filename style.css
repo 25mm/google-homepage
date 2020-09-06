@@ -1,5 +1,7 @@
 body {
     font-family: "Arial", sans-serif;
+//    display: grid;
+//    grid-template: auto 1fr auto / auto 1fr auto;
 }
 
 a {
@@ -15,19 +17,42 @@ header {
     color: #000;
     opacity: 0.75;
     font-size: 13px;
+    padding-top: 14px;
+    display: grid;
+    grid-template-columns: 60px 60px 1fr 60px 60px 40px 40px;
+}
+
+.about {
+    padding-left: 22px;
+    grid-column: 1/2;
+}
+
+.store {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.gmail {
+    grid-column: 5/6;
+    text-align: center;
+}
+
+.images {
+    grid-column: 6/7;
 }
 
 input {
     width: 400px;
     height: 36px;
-    border: 0.5px solid #000;
+    border: 0.5px solid #d1d1d1;
     border-radius: 20px;
     opacity: 0.87;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 30px;
     font-size: 16px;
 }
 
 input:hover {
+    background: linear-gradient(0deg, #f5f5f5 #f1f1f1); 
 
 
 }
@@ -44,16 +69,33 @@ button {
 
 button:hover {
     color: #000;
-    border: 1px solid #858a91;
-    background: linear-gradient(0deg, #f5f5f5 #f1f1f1) 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 1px solid #c6c6c6;
+    background: linear-gradient(0deg, #f5f5f5 #f1f1f1); 
+    box-shadow: 0 2px 5px #c6c6c6;
 }
 
 footer {
     opacity: 0.6;
-    font-size: 14px;
+    background-color: #d1d1d1;
+    position: fixed;
 }
 
 .location {
     font-size: 15px;
+    border: 1px solid #a6a6a6;
+    padding: 14px 4px 14px 24px;
+
+}
+
+.footer2 {
+    font-size: 14px;
+    border: 1px solid #a6a6a6;
+    padding: 14px 4px 14px 24px;
+
+
+}
+
+.search {
+    display: grid;
+    place-items: center;
 }
