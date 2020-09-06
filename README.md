@@ -1,0 +1,1 @@
+This mini-project is part of the The Odin Project Web Development 101 syllabus.
