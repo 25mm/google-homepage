@@ -1,8 +1,5 @@
 body {
     font-family: "Arial", sans-serif;
-/*    display: grid;
-    grid-template-rows: auto 1fr auto;*/
-    height: 100%;
     margin: 0px;
 }
 
@@ -23,12 +20,19 @@ header {
     display: grid;
     grid-template-columns: auto auto 1fr auto auto auto auto;
     grid-column-gap: 15px;
+    justify-items: center;
 }
 
 .about {grid-column: 1/2;}
 .store {grid-column: 2/3;}
 .gmail {grid-column: 5/6;}
 .images {grid-column: 6/7;}
+.apps {
+    grid-column: 7/8;
+    width: 19px;
+    margin: -1px;
+    padding: 0px 5px 0px 5px;
+}
 
 .userpic {
     margin-top: -8px;
@@ -53,10 +57,11 @@ input {
     opacity: 0.87;
     padding: 0px 43px 0px 43px;
     font-size: 16px;
-    background: url(images/i2_2ec824b0.png);
-    background-repeat: no-repeat;
-    background-size: 528px 68px;
-    background-position: -235px -24px;
+    background: url(images/search.png), url(images/voice.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 24px, 30px;
+    background-position: 13px 10px, 537px 7px;
+    
 }
 
 input:hover {
@@ -67,7 +72,6 @@ input:hover {
 input:focus {
     outline: none;
 }
-
 
 form {
     margin-top: 109px;
